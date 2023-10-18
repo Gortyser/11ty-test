@@ -36,7 +36,7 @@ jobs:
       - name: Build
         run: |
           npm ci
-          npx @11ty/eleventy
+          npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
