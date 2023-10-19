@@ -1,6 +1,7 @@
 ---
 layout: main-layout.njk
 title: My title
+permalink: "posts/{{ title | slugify }}/"
 ---
 <main>
   {{ content | safe }}
