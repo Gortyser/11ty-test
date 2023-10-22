@@ -15,17 +15,23 @@ eleventyImport:
     </ul>
 
     <p>Check first post only:</p>
+    <ul>
     {%- for post in collections['first post'] -%}
         <li><a href=".{{ post.url}}">{{ post.data.title }}</a></li>
     {%- endfor -%}
+    </ul>
 
     <p>Check second tag:</p>
+    <ul>
     {%- for post in collections['second tag'] -%}
         <li>{{ post.data.title }}</li>
     {%- endfor -%}
+    </ul>
 
     <p>And last but not least:</p>
+    <ul>
     {%- for post in collections['another tag'] -%}
         <li>{{ post.data.title }}</li>
     {%- endfor -%}
+    </ul>
 </body>
